@@ -30,7 +30,7 @@ $router->group(['prefix' => 'api'], function () use ($router) {
     $router->delete('business_type/{id}', 'BusinessController@deleteBusinessType');
 
 
-    $router->get('formgroups/','FormGroupController@getAll ');
+    $router->get('formgroups','FormGroupController@getAll ');
     $router->post('formgroups','FormGroupController@create');
     $router->put('formgroups/{id}','FormGroupController@update');
     $router->delete('formgroups/{id}','FormGroupController@delete');
